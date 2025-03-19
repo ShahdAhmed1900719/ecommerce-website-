@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form id="form">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="username" name="username" placeholder="Name" required>
+                        <span id="usernameError" style="color: red; display: none;">Invalid username!</span>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" id="phone" 
+                        pattern="^01[0125][0-9]{8}$" placeholder="Phone"
+                        title="Phone number must be a valid Egyptian number (e.g., 01012345678)" required>
+                        <span id="phoneError" class="error">shold be an Egyptian number</span>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email"
+                        pattern="^[a-zA-Z0-9]+@iti\.com$" 
+                        title="Email must end with @iti.com" required>
+                 <span id="emailError" class="error">Email must end with @iti.com</span>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p>Lost Password <a href="#">Click Here!</a></p>
+
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="signupbtn">Sign Up</button>
+                    <button type="submit" class="disable" id="signinbtn">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+         document.getElementById('form').addEventListener('submit', function(event) {
+            // Prevent form submission
+            event.preventDefault();
+            const email = document.getElementById('email');
+            const phone = document.getElementById('phone');
+            const emailError = document.getElementById('emailError');
+            const phoneError = document.getElementById('phoneError');
+
+            // Check if the email is valid
+            if (!email.checkValidity()) {
+                emailError.style.display = 'inline';
+                console.log('Invalid email entered');
+            } else {
+                emailError.style.display = 'none';
+            }
+
+            // Check if the phone number is valid
+            if (!phone.checkValidity()) {
+                phoneError.style.display = 'inline';
+            } else {
+                phoneError.style.display = 'none';
+            }
+
+            // If both are valid, allow form submission
+            if (email.checkValidity() && phone.checkValidity()) {
+                alert('submitted');
+            }
+        });
+        //*******************************************
+        let signupbtn=document.getElementById("signupbtn");
+        let signinbtn=document.getElementById("signinbtn");
+        let nameField=document.getElementById("nameField");
+        let phone=document.getElementById("phone");
+        let title=document.getElementById("title");
+
+        signinbtn.onclick =function(){
+            nameField.style.maxHeight="0";
+            phone.style.maxHeight="0";
+            title.innerHTML="Sign In";
+            signupbtn.classList.add("disable");
+            signinbtn.classList.remove("disable");
+        }
+
+        signupbtn.onclick =function(){
+            nameField.style.maxHeight="60px";
+            phone.style.maxHeight="60px";
+            title.innerHTML="Sign Up";
+            signupbtn.classList.remove("disable");
+            signinbtn.classList.add("disable");
+
+
+        }
+
+    </script>
+</body>
+</html>
