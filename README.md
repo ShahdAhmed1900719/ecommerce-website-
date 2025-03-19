@@ -24,3 +24,23 @@ HTML5 for structuring the web pages.
 CSS3 for styling and responsive design.
 
 JavaScript for interactivity and dynamic functionalities.
+License
+
+This project is open-source and available under the MIT License.
+
+![Screenshot 2025-03-19 164507](https://github.com/user-attachments/assets/020224e9-3a3e-411f-987e-84faa3577ff8)
+
+
+
+
+
+
+
+Contact
+
+For any inquiries or issues, feel free to reach out:
+
+GitHub: ShahdAhmed1900719 
+
+Email: shahdahmedsamer2512001@gmail.com
+
