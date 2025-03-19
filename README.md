@@ -1,4 +1,4 @@
-# ecommerce-website-
+![Screenshot 2025-03-19 164702](https://github.com/user-attachments/assets/eec0bfd0-7d7d-4333-9a12-9cf38d23b20a)# ecommerce-website-
 his is a fully responsive eCommerce website built using HTML, CSS, and JavaScript. The website provides a seamless shopping experience with an intuitive user interface, interactive features, and modern design principles.
 
 Features
@@ -31,10 +31,13 @@ This project is open-source and available under the MIT License.
 ![Screenshot 2025-03-19 164507](https://github.com/user-attachments/assets/020224e9-3a3e-411f-987e-84faa3577ff8)
 
 
+![Screenshot 2025-03-19 164614](https://github.com/user-attachments/assets/5a5b3d90-bdb8-4085-a9ae-4712c95ad754)
 
+![Screenshot 2025-03-19 164628](https://github.com/user-attachments/assets/7e2e5cbb-c2fc-4540-ac56-dc23555a0b02)
 
+![Screenshot 2025-03-19 164645](https://github.com/user-attachments/assets/b4a59fbd-0a61-41be-bf40-ffc807acac50)
 
-
+![Uploading Screenshot 2025-03-19 164702.png…]()
 
 Contact
 
