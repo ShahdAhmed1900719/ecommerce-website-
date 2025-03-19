@@ -1,4 +1,5 @@
-ecommerce-website-
+ecommerce-website
+
 his is a fully responsive eCommerce website built using HTML, CSS, and JavaScript. The website provides a seamless shopping experience with an intuitive user interface, interactive features, and modern design principles.
 
 Features
